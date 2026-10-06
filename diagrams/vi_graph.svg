@@ -1,0 +1,71 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" width="100%" height="100%">
+  <defs>
+    <linearGradient id="graphBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0f172a"/>
+      <stop offset="100%" stop-color="#1e293b"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="500" rx="16" fill="url(#graphBg)"/>
+  <text x="400" y="38" fill="#f8fafc" font-family="sans-serif" font-size="20" font-weight="bold" text-anchor="middle">Ohm&#39;s Law: V-I Characteristic Graph</text>
+  <text x="400" y="60" fill="#94a3b8" font-family="sans-serif" font-size="12" text-anchor="middle">Linear relation for an Ohmic conductor: V = I &times; R (Slope = Resistance R)</text>
+
+  <!-- Grid lines -->
+  <g stroke="#334155" stroke-width="1" stroke-dasharray="2,2">
+    <line x1="150" y1="350" x2="650" y2="350"/>
+    <line x1="150" y1="270" x2="650" y2="270"/>
+    <line x1="150" y1="190" x2="650" y2="190"/>
+    <line x1="150" y1="110" x2="650" y2="110"/>
+
+    <line x1="250" y1="110" x2="250" y2="430"/>
+    <line x1="370" y1="110" x2="370" y2="430"/>
+    <line x1="490" y1="110" x2="490" y2="430"/>
+    <line x1="610" y1="110" x2="610" y2="430"/>
+  </g>
+
+  <!-- Axes -->
+  <!-- Y-Axis (V) -->
+  <line x1="150" y1="430" x2="150" y2="80" stroke="#f8fafc" stroke-width="3"/>
+  <polygon points="150,70 144,85 156,85" fill="#f8fafc"/>
+  <text x="80" y="250" fill="#38bdf8" font-family="sans-serif" font-size="14" font-weight="bold" transform="rotate(-90 80,250)" text-anchor="middle">Potential Difference V (Volts)</text>
+
+  <!-- X-Axis (I) -->
+  <line x1="150" y1="430" x2="700" y2="430" stroke="#f8fafc" stroke-width="3"/>
+  <polygon points="710,430 695,424 695,436" fill="#f8fafc"/>
+  <text x="425" y="475" fill="#38bdf8" font-family="sans-serif" font-size="14" font-weight="bold" text-anchor="middle">Current I (Amperes)</text>
+
+  <!-- Origin -->
+  <text x="135" y="445" fill="#94a3b8" font-family="sans-serif" font-size="12">0</text>
+
+  <!-- Y ticks (Volts) -->
+  <text x="130" y="355" fill="#cbd5e1" font-family="sans-serif" font-size="12" text-anchor="end">4 V</text>
+  <text x="130" y="275" fill="#cbd5e1" font-family="sans-serif" font-size="12" text-anchor="end">8 V</text>
+  <text x="130" y="195" fill="#cbd5e1" font-family="sans-serif" font-size="12" text-anchor="end">12 V</text>
+  <text x="130" y="115" fill="#cbd5e1" font-family="sans-serif" font-size="12" text-anchor="end">16 V</text>
+
+  <!-- X ticks (Amperes) -->
+  <text x="250" y="450" fill="#cbd5e1" font-family="sans-serif" font-size="12" text-anchor="middle">1 A</text>
+  <text x="370" y="450" fill="#cbd5e1" font-family="sans-serif" font-size="12" text-anchor="middle">2 A</text>
+  <text x="490" y="450" fill="#cbd5e1" font-family="sans-serif" font-size="12" text-anchor="middle">3 A</text>
+  <text x="610" y="450" fill="#cbd5e1" font-family="sans-serif" font-size="12" text-anchor="middle">4 A</text>
+
+  <!-- Ohm's Law Line (Straight line through origin) -->
+  <!-- 0,0 is (150, 430). 1A,4V is (250, 350). 3A,12V is (490, 190). 4A,16V is (610, 110) -->
+  <line x1="150" y1="430" x2="640" y2="90" stroke="#ec4899" stroke-width="4" stroke-linecap="round"/>
+
+  <!-- Slope Triangle (between 0 and 3A, 12V) -->
+  <path d="M 150 430 L 490 430 L 490 190 Z" fill="#ec4899" fill-opacity="0.1" stroke="#ec4899" stroke-width="1.5" stroke-dasharray="4,4"/>
+
+  <!-- Data Points -->
+  <circle cx="250" cy="350" r="6" fill="#fbbf24" stroke="#fff" stroke-width="1.5"/>
+  <circle cx="370" cy="270" r="6" fill="#fbbf24" stroke="#fff" stroke-width="1.5"/>
+  <circle cx="490" cy="190" r="7" fill="#22c55e" stroke="#fff" stroke-width="2"/>
+  <text x="505" y="185" fill="#4ade80" font-family="sans-serif" font-size="13" font-weight="bold">P(3 A, 12 V)</text>
+
+  <!-- Calculation Callout Box -->
+  <rect x="520" y="240" width="240" height="130" rx="8" fill="#0284c7" fill-opacity="0.2" stroke="#38bdf8" stroke-width="1.5"/>
+  <text x="640" y="265" fill="#38bdf8" font-family="sans-serif" font-size="14" font-weight="bold" text-anchor="middle">Slope Calculation</text>
+  <text x="540" y="290" fill="#e2e8f0" font-family="sans-serif" font-size="12">&bull; Slope = &Delta;V / &Delta;I</text>
+  <text x="540" y="312" fill="#e2e8f0" font-family="sans-serif" font-size="12">&bull; Slope = (12 V - 0 V) / (3 A - 0 A)</text>
+  <text x="540" y="335" fill="#fbbf24" font-family="sans-serif" font-size="14" font-weight="bold">&bull; Resistance R = 4 &Omega;</text>
+  <text x="540" y="355" fill="#94a3b8" font-family="sans-serif" font-size="11">Constant slope &rArr; Ohmic conductor</text>
+</svg>

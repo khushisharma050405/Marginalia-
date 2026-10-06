@@ -1,0 +1,76 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" width="100%" height="100%">
+  <defs>
+    <linearGradient id="skyGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#0284c7"/>
+      <stop offset="50%" stop-color="#38bdf8"/>
+      <stop offset="100%" stop-color="#bae6fd"/>
+    </linearGradient>
+    <linearGradient id="waterGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#0284c7"/>
+      <stop offset="100%" stop-color="#0369a1"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="500" rx="16" fill="url(#skyGrad)"/>
+  <text x="400" y="36" fill="#0f172a" font-family="sans-serif" font-size="20" font-weight="bold" text-anchor="middle">The Hydrological (Water) Cycle</text>
+  <text x="400" y="56" fill="#1e293b" font-family="sans-serif" font-size="12" text-anchor="middle">Continuous circulation of water between Earth and Atmosphere</text>
+
+  <!-- Sun -->
+  <circle cx="100" cy="100" r="35" fill="#f59e0b" stroke="#fbbf24" stroke-width="4"/>
+  <!-- Sun rays -->
+  <line x1="100" y1="55" x2="100" y2="45" stroke="#f59e0b" stroke-width="3" stroke-linecap="round"/>
+  <line x1="100" y1="145" x2="100" y2="155" stroke="#f59e0b" stroke-width="3" stroke-linecap="round"/>
+  <line x1="55" y1="100" x2="45" y2="100" stroke="#f59e0b" stroke-width="3" stroke-linecap="round"/>
+  <line x1="145" y1="100" x2="155" y2="100" stroke="#f59e0b" stroke-width="3" stroke-linecap="round"/>
+
+  <!-- Mountains -->
+  <polygon points="600,420 720,200 800,420" fill="#64748b"/>
+  <polygon points="680,270 720,200 760,270 735,260 720,275 705,260" fill="#f8fafc"/>
+  <polygon points="450,420 570,240 680,420" fill="#475569"/>
+  <polygon points="535,290 570,240 605,290 590,280 570,295 550,280" fill="#f8fafc"/>
+
+  <!-- Ocean / Water body -->
+  <path d="M 0 380 Q 200 370 400 390 L 400 500 L 0 500 Z" fill="url(#waterGrad)"/>
+  <path d="M 400 390 Q 600 410 800 420 L 800 500 L 400 500 Z" fill="#047857"/>
+
+  <!-- Clouds -->
+  <!-- Cloud 1 (Condensation) -->
+  <g transform="translate(250, 90)" fill="#f8fafc">
+    <ellipse cx="40" cy="30" rx="30" ry="20"/>
+    <ellipse cx="70" cy="20" rx="35" ry="25"/>
+    <ellipse cx="100" cy="30" rx="30" ry="20"/>
+  </g>
+  <!-- Cloud 2 (Precipitation) -->
+  <g transform="translate(540, 110)" fill="#94a3b8">
+    <ellipse cx="40" cy="30" rx="35" ry="22"/>
+    <ellipse cx="75" cy="18" rx="40" ry="28"/>
+    <ellipse cx="110" cy="30" rx="35" ry="22"/>
+    <!-- Rain drops -->
+    <line x1="40" y1="65" x2="30" y2="95" stroke="#38bdf8" stroke-width="2.5" stroke-linecap="round"/>
+    <line x1="65" y1="65" x2="55" y2="95" stroke="#38bdf8" stroke-width="2.5" stroke-linecap="round"/>
+    <line x1="90" y1="65" x2="80" y2="95" stroke="#38bdf8" stroke-width="2.5" stroke-linecap="round"/>
+    <line x1="115" y1="65" x2="105" y2="95" stroke="#38bdf8" stroke-width="2.5" stroke-linecap="round"/>
+  </g>
+
+  <!-- Cycle Arrows & Labels -->
+  <!-- 1. Evaporation -->
+  <path d="M 180 360 Q 200 240 250 170" fill="none" stroke="#dc2626" stroke-width="3" stroke-dasharray="4,4"/>
+  <polygon points="255,165 240,172 250,183" fill="#dc2626"/>
+  <rect x="130" y="250" width="110" height="28" rx="6" fill="#fef2f2" stroke="#dc2626" stroke-width="1.5"/>
+  <text x="185" y="269" fill="#b91c1c" font-family="sans-serif" font-size="12" font-weight="bold" text-anchor="middle">1. Evaporation</text>
+
+  <!-- 2. Condensation -->
+  <path d="M 360 110 L 490 125" fill="none" stroke="#0284c7" stroke-width="3"/>
+  <polygon points="500,126 485,119 485,133" fill="#0284c7"/>
+  <rect x="380" y="80" width="120" height="28" rx="6" fill="#f0f9ff" stroke="#0284c7" stroke-width="1.5"/>
+  <text x="440" y="99" fill="#0369a1" font-family="sans-serif" font-size="12" font-weight="bold" text-anchor="middle">2. Condensation</text>
+
+  <!-- 3. Precipitation -->
+  <rect x="640" y="160" width="125" height="28" rx="6" fill="#f0fdf4" stroke="#16a34a" stroke-width="1.5"/>
+  <text x="702" y="179" fill="#15803d" font-family="sans-serif" font-size="12" font-weight="bold" text-anchor="middle">3. Precipitation</text>
+
+  <!-- 4. Surface Runoff / Collection -->
+  <path d="M 650 370 Q 520 400 350 410" fill="none" stroke="#0284c7" stroke-width="4"/>
+  <polygon points="340,410 355,403 355,417" fill="#0284c7"/>
+  <rect x="430" y="425" width="170" height="28" rx="6" fill="#f8fafc" stroke="#0284c7" stroke-width="1.5"/>
+  <text x="515" y="444" fill="#0369a1" font-family="sans-serif" font-size="12" font-weight="bold" text-anchor="middle">4. Runoff &amp; Collection</text>
+</svg>

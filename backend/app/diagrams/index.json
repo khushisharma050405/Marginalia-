@@ -1,0 +1,88 @@
+{
+  "cbse/8/science/sound/human_ear": {
+    "file": "human_ear.svg",
+    "title": "Anatomy of the Human Ear",
+    "subject": "Science",
+    "chapter": "Sound",
+    "keywords": [
+      "ear",
+      "human ear",
+      "hearing",
+      "pinna",
+      "eardrum",
+      "cochlea",
+      "auditory",
+      "draw ear"
+    ]
+  },
+  "cbse/8/science/sound/tuning_fork": {
+    "file": "tuning_fork.svg",
+    "title": "Vibrating Tuning Fork and Sound Propagation",
+    "subject": "Science",
+    "chapter": "Sound",
+    "keywords": [
+      "tuning fork",
+      "vibrating tuning fork",
+      "compressions",
+      "rarefactions",
+      "sound propagation",
+      "vibrating fork"
+    ]
+  },
+  "cbse/10/science/electricity/vi_graph": {
+    "file": "vi_graph.svg",
+    "title": "Ohm's Law V-I Characteristic Graph",
+    "subject": "Science",
+    "chapter": "Electricity",
+    "keywords": [
+      "v-i graph",
+      "vi graph",
+      "ohm",
+      "ohms law",
+      "voltage current graph",
+      "v-i characteristic",
+      "v i graph"
+    ]
+  },
+  "cbse/8/science/natural_phenomena/water_cycle": {
+    "file": "water_cycle.svg",
+    "title": "The Hydrological (Water) Cycle",
+    "subject": "Science",
+    "chapter": "Some Natural Phenomena",
+    "keywords": [
+      "water cycle",
+      "hydrological cycle",
+      "evaporation",
+      "condensation",
+      "precipitation",
+      "water cycle diagram"
+    ]
+  },
+  "cbse/10/science/our_environment/food_chain": {
+    "file": "food_chain.svg",
+    "title": "Terrestrial Food Chain & Trophic Energy Flow",
+    "subject": "Science",
+    "chapter": "Our Environment",
+    "keywords": [
+      "food chain",
+      "trophic levels",
+      "producers",
+      "consumers",
+      "energy flow in ecosystem"
+    ]
+  },
+  "cbse/10/science/electricity/simple_circuit": {
+    "file": "simple_circuit.svg",
+    "title": "Basic Electric Circuit Diagram",
+    "subject": "Science",
+    "chapter": "Electricity",
+    "keywords": [
+      "circuit",
+      "simple circuit",
+      "electric circuit",
+      "ammeter",
+      "circuit diagram",
+      "draw circuit"
+    ]
+  }
+}

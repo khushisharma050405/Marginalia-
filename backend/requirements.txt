@@ -1,0 +1,11 @@
+fastapi
+uvicorn
+psycopg[binary]
+PyJWT
+sympy
+pypdf
+pytesseract
+pillow
+python-multipart
+httpx
+openai

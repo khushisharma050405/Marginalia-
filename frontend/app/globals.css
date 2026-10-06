@@ -1,0 +1,55 @@
+@import url('https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400..700;1,6..72,400..700&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --bg-color: #F8F6F0;
+  --text-primary: #292A28;
+}
+
+body {
+  background: #F8F6F0;
+  color: #292A28;
+  font-family: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+.card {
+  background: rgba(255, 255, 255, 0.95);
+  border: 1px solid #EDE7DF;
+  border-radius: 18px;
+  padding: 20px;
+  box-shadow: 0 4px 20px -4px rgba(80, 60, 40, 0.04);
+}
+
+.btn {
+  background: #5A443B;
+  color: #FAF7F2;
+  border-radius: 12px;
+  padding: 8px 16px;
+  font-weight: 500;
+  transition: all 0.15s ease;
+}
+
+.btn:hover {
+  background: #7D4E41;
+}
+
+.inp {
+  width: 100%;
+  border: 1px solid #DCD5C9;
+  background: #FFFDF9;
+  border-radius: 12px;
+  padding: 9px 13px;
+  font-size: 14px;
+  color: #2D2722;
+  outline: none;
+  transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+.inp:focus {
+  border-color: #7D4E41;
+  box-shadow: 0 0 0 2px rgba(125, 78, 65, 0.15);
+}

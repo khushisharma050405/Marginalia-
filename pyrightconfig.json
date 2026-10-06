@@ -1,0 +1,18 @@
+{
+  "venvPath": "backend",
+  "venv": ".venv",
+  "extraPaths": [
+    "backend",
+    "backend/app",
+    "backend/.venv/lib/python3.13/site-packages"
+  ],
+  "include": [
+    "backend"
+  ],
+  "exclude": [
+    "**/node_modules",
+    "backend/.venv"
+  ],
+  "reportMissingImports": "none",
+  "reportMissingTypeStubs": false
+}

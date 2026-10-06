@@ -1,7 +1,8 @@
 import os, time, secrets, hashlib, hmac, json, io, re, datetime, jwt, psycopg
 from typing import Any, Optional
 from psycopg.rows import dict_row
-from fastapi import FastAPI, Depends, HTTPException, UploadFile, File, Form, Header
+from fastapi import FastAPI, Depends, HTTPException, UploadFile, File, Form, Header, Request
+from fastapi.responses import JSONResponse
 from fastapi.middleware.cors import CORSMiddleware
 from pydantic import BaseModel
 from .seed import seed, CLASSES
@@ -17,6 +18,19 @@ SECRET = os.getenv("JWT_SECRET", "dev-secret")
 
 app = FastAPI(title="Marginalia API")
 app.add_middleware(CORSMiddleware, allow_origins=["*"], allow_methods=["*"], allow_headers=["*"])
+
+@app.exception_handler(Exception)
+async def unhandled_exception_handler(request: Request, exc: Exception):
+    err_str = str(exc)
+    if "Connection refused" in err_str or "could not connect to server" in err_str or "server closed the connection" in err_str:
+        detail_msg = "Database connection failed. Please ensure DATABASE_URL is configured with a valid PostgreSQL instance on Render."
+    else:
+        detail_msg = f"Server error: {err_str}"
+    return JSONResponse(
+        status_code=500,
+        content={"detail": detail_msg},
+        headers={"Access-Control-Allow-Origin": "*", "Access-Control-Allow-Headers": "*", "Access-Control-Allow-Methods": "*"}
+    )
 
 def db() -> Any:
     return psycopg.connect(DB, row_factory=dict_row, autocommit=True)  # type: ignore
